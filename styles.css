@@ -9,6 +9,7 @@
 }
 html {
     background-image:linear-gradient(#529096, #5E0F18);
+    height: 100%;
 }
 
 body{
@@ -65,12 +66,14 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 14px;
 }
 
 .reset {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 14px;
 }
 
 .button {
