@@ -1,0 +1,123 @@
+html {
+    background-image:linear-gradient(#529096, #5E0F18);
+}
+
+body{
+    /*background-color: #5E0F18;*/
+    /*background-color: #529096;*/
+    background-image:linear-gradient(#5E0F18, #529096);
+    color:white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.first {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first input {
+    width: 350px;
+    height: 80px;
+    font-size: x-large;
+    font-style: bold;
+    animation:colorchange 0.2s linear infinite;
+    border-radius: 10px;
+    border-width: 5px;
+    background-color: #5E0F18;
+    cursor: pointer;
+}
+
+@keyframes colorchange {
+    0% { color: #FF005C;
+        border-color: #13F4EF;  }
+    20% { color: #FFBF00;
+        border-color: #006FFF; }
+    40% { color: #FAFF00;
+        border-color: #FF005C; }
+    60% { color: #68FF00;
+        border-color: #FFBF00 }
+    80% { color: #13F4EF;
+        border-color: #FAFF00; }
+    100% { color: #006FFF;
+        border-color: #68FF00; }
+}
+
+.second {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: xx-large;
+    padding: 0 15%;
+    margin-top: 30px;
+}
+
+.third {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.third input {
+    width: 200px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 5px;
+    animation:colorchange 1s linear infinite;
+    background-color: #529096;
+    cursor: pointer;
+}
+
+.taptap {
+    position: relative;
+    top: 60%;
+    left: -15%;
+    height: 280px;
+    /*transform: rotate(90deg);*/
+}
+
+.gif {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+#gif1 {
+    top: 45%;
+    left: 2.5%;
+    height: 300px;
+}
+
+#gif2 {
+    top: 10%;
+    right: 5%;
+    height: 200px;
+}
+
+#gif3 {
+    bottom: 0;
+    left: 30%;
+    height: 300px;
+    width: 700px;
+}
+
+#gif4 {
+    bottom: 20%;
+    right: 10%;
+    height: 250px;
+}
+
+#gif5 {
+    top: 5%;
+    left: 5%;
+    height: 250px;
+}

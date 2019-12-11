@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body onload="displayTable()">
+        <img class="left" src="img/raven.jpg">
+        <div class="right">
+            <h1>ON FAIT LES EQUIPES !</h1>
+            <form id="kraken-form" onsubmit="return pressEnter(addKraken);">
+                <input type="text" id="krakeninput" placeholder="KRAKEN"><input class="button" type="button" onclick="addKraken()" value="AJOUTE UN KRAKEN">
+            </form>
+            <form id="autre-form" onsubmit="return pressEnter(addAutre);">
+                <input type="text" id="autreinput" placeholder="AUTRE"><input class="button" type="button" onclick="addAutre()" value="AJOUTE QQ1 D'AUTRES">
+            </form>
+            <div class="reset"><input type="button" value="RESET" onclick="reset()"></div>
+            <div class="start">PRESS THE KRAKEN TO START</div>
+            <img onclick="start()" src="img/logo.png" alt="">
+            <table class="table" id="table">
+                <tr>
+                    <th>LES KRAKEN</th>
+                    <th>LES AUTRES</th>
+                </tr>
+            </table> 
+        </div>
+    </body>
+</html>
