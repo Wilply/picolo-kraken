@@ -1,25 +1,25 @@
-const listequestion = [ "@#@J1@#@ bois autant de gorgées que le nombre de personnes que t’as chopé depuis que t’es dans l’INT.",
+const listequestion = [ "@#@J1@#@ bois autant de gorgées que le nombre de personnes que t’as chopé depuis que t’es à l’INT.",
                         "Action/vérité, @#@J1@#@ choisit une action ou une verité pour @#@J2@#@.",
                         "@#@J1@#@ masse @#@J2@#@ sans se plaindre. (La tasse de thé) #consentement. Celui qui refuse bois",
                         "@#@J1@#@ et @#@J2@#@ racontent une anecdote vraie ou fausse, le reste de la salle vote et les perdants boivent 3 gorgées. (si tout le monde a juste, celui qui a raconté boit 5 gorgées)",
-                        "Tous ceux qui veulent coucher avec qqun qui est dans la pièce boivent 2 gorgées (bonus, ceux qui disent avec qui distribuent 4 gorgées)",
+                        "Tous ceux qui veulent coucher avec qq1 qui est dans la pièce boivent 2 gorgées (bonus, ceux qui disent avec qui distribuent 4 gorgées)",
                         "Ceux qui on déjà insulté leur partenaire au lit boivent 3, ils les distribuent si c’était demandé",
                         "@#@J1@#@ pendant 5 min, tu dois chopper quiconque dit ton nom, bois 2 à chaque refus.",
-                        "@#@J1@#@ suce le doigt de @#@J2@#@ sensuellement ou boit 5",
-                        "Les raisons de coucher avec un inconnu, le premier qui ne trouve plus d’argument boit 4. @#@J1@#@ commence",
+                        "@#@J1@#@ suce le doigt sensuellement de @#@J2@#@  ou boit 5",
+                        "Donnez les raisons de coucher avec un inconnu, le premier qui ne trouve plus d’argument boit 4. @#@J1@#@ commence",
                         "@#@J1@#@ et @#@J2@#@ félicitations, vous jouez maintenant aussi au je bois tu bois",
                         "Un vote pour oui ou non vendre des dildos à l’épicerie solidaire, les perdants boivent 3",
-                        "@#@J1@#@ distribue autant de gorgées qu’il(elle) a reçu de suçons à l’INT",
-                        "D’après vous, qui choppe le plus, les 1A ou les 2A ou 3A ? Les perdants boivent 2",
+                        "@#@J1@#@ distribue autant de gorgées qu’il/elle a reçu de suçons à l’INT",
+                        "D’après vous, qui choppe le plus, les 1A, les 2A ou 3A ? Les perdants boivent 2",
                         "A tour de rôle citer le nom d’un Eclipse, le perdant boit 4. @#@J1@#@ commence",
                         "@#@J1@#@ lèche l’oreille de @#@J2@#@ ou bois 5 gorgées", 
                         "@#@J1@#@ et @#@J2@#@ celui qui a couché avec le plus de personnes à l’INT distribue 4 gorgées.",
                         "@#@J1@#@ et @#@J2@#@ faites des pronostics sur le nombre de personnes que Julien a baisé, le plus proche distribué 3 gorgées, l’autre les bois.",
                         "@#@J1@#@ et @#@J2@#@ faites des pronostics sur le nombre de personnes que Justine a baisé, le plus proche distribué 3 gorgées, l’autre les bois.",
                         "@#@J1@#@ et @#@J2@#@ faites des pronostics sur le bonnet de soutient gorges de Marion. Le plus proche distribue 4 gorgées, l’autre les bois.",
-                        "@#@J1@#@ et @#@J2@#@ faites des pronostics sur le nombre de prez que c’est tape seji. Le plus proche distribue 4 gorgées, l’autre les bois.",
+                        "@#@J1@#@ et @#@J2@#@ faites des pronostics sur le nombre de prez que s’est tape Seji. Le plus proche distribue 4 gorgées, l’autre en bois 4.",
                         "A tour de rôle, distribuez autant de gorgées que vous avez eu de partenaires sexuels à l’INT. @#@J1@#@ commence.",
-                        "@#@J1@#@ devient le killer, toux ceux qui le regardent dans les yeux boivent 4 gorgées.(5 tours)",
+                        "@#@J1@#@ devient le killer pendant 5 tours, toux ceux qui le regardent dans les yeux boivent 4 gorgées.",
                         "@#@J1@#@ et @#@J2@#@ racontent une anecdote gênante, les autres votent pour la plus gênante, le gagnant distribue 4 gorgées.",
                         "Jeu de l’autoroute: @#@J1@#@ essaye de rejoindre @#@J2@#@ par le biais des personnes que vous avez choppé",
                         "@#@J1@#@ devine la dernière personne que @#@J2@#@ a choppé. 3 essais, 1 gorgée par mauvaises réponses",
@@ -30,7 +30,7 @@ const listequestion = [ "@#@J1@#@ bois autant de gorgées que le nombre de perso
                         "Donnez le nom des listes gagnante BDE. @#@J1@#@ commence",
                         "Donnez le nom des listes gagnante asint. @#@J1@#@ commence",
                         "Pouce en l'air ceux qui ont eu - de 5 expériences sexuelles, pouce en bas ceux qui ont eu + 6 expériences sexuelles. Les minoritaires boivent 3 gorgées",
-                        "@#@J1@#@ et @#@J2@#@ faîtes des cris de jouissance. Celui qui perd boit 2 gorgés",
+                        "@#@J1@#@ et @#@J2@#@ faîtes des cris de jouissance. Celui qui est le moins bon boit 2 gorgés",
                         "@#@J1@#@ fait un suçon à @#@J2@#@ ou boit 4 gorgés #consentement",
                         "@#@J1@#@ et @#@J2@#@ doivent récupérer un soutif de leur liste/club/asso respective, le perdant boit 4 gorgés",
                         "@#@J1@#@ montre ton cul sinon boit 1 gorgé",
@@ -69,7 +69,7 @@ function displayTable() {
     var table2 = getTable('tableautres')
     //table.push('titi')
     var t = document.getElementById('table')
-    t.innerHTML = "<tr><th>KRAKEN</th><th>AUTRES</th></tr>"
+    t.innerHTML = "<tr><th>EQUIPE KRAKEN</th><th>EQUIPE APERO</th></tr>"
     //console.log(table)
     var taille
     if (table.length > table2.length) {
